@@ -79,7 +79,9 @@ public class FXMLController {
     	}
     	
     	long start = System.nanoTime();
-    	List<RichWord> output = dictionary.spellCheckText(wordsList);
+    	//List<RichWord> output = dictionary.spellCheckText(wordsList);
+    	List<RichWord> output = dictionary.spellCheckTextDichotomic(wordsList);
+    	//List<RichWord> output = dictionary.spellCheckTextLinear(wordsList);
     	long end = System.nanoTime();
     	
     	int count = 0;
